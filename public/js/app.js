@@ -1,7 +1,9 @@
-//commit this as rendering multiple components 
+//commit this as multiple components sorted as per number of votes 
+
 class ProductList extends React.Component{
   render(){
    // const product = Seed.products[0];
+   
    const productComponents = Seed.products.map((product)=>(
   <Product
      key = {'product-'+product.id}
